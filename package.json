@@ -4,7 +4,8 @@
   "description": "graphql server for norris api",
   "main": "dist/index.js",
   "scripts": {
-    "start": "tsc && node dist/index.js",
+    "start": "build && node dist/index.js",
+    "build": "tsc",
     "test": "jest"
   },
   "repository": {
