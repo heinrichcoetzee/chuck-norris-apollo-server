@@ -6,6 +6,8 @@ import { ApolloServer } from 'apollo-server';
 const server = new ApolloServer({
     typeDefs,
     resolvers,
+    introspection: true,
+    playground: true,
     dataSources: () => {
         return {
             jokeAPI: new JokeDataSource()
